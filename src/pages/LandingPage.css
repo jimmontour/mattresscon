@@ -1,0 +1,26 @@
+.landing-page {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.header {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.event-details {
+  margin: 20px 0;
+}
+
+.event-time,
+.event-location {
+  margin: 10px 0;
+}
+
+.footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+}
