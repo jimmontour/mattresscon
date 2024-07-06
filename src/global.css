@@ -1,0 +1,92 @@
+/* Import Normalize.css */
+@import-normalize;
+
+/* Color Variables */
+:root {
+  --primary-color: #ffcc00; /* Yellow from the flyer */
+  --secondary-color: #333333; /* Dark background color from the flyer */
+  --accent-color: #d7263d; /* Red color from the flyer */
+  --background-color: #f8f8f8; /* Light background color */
+  --text-color: #333333; /* General text color */
+  --link-color: #d7263d; /* Links color matching the accent */
+  --link-hover-color: #ffcc00; /* Link hover color */
+}
+
+/* Global Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--secondary-color);
+  margin: 0 0 15px;
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 15px;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+ul,
+ol {
+  margin: 0 0 15px 20px;
+  padding: 0;
+}
+
+li {
+  margin: 0 0 5px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+input,
+textarea {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+form {
+  margin: 0 0 15px;
+}
