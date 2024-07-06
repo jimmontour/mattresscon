@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import habitatImage from "../images/habitat.webp"; // Ensure you have a habitat image
+import { Element } from "react-scroll";
 
 const BenefitsContainer = styled.div`
   padding: 50px 20px;
@@ -9,6 +10,8 @@ const BenefitsContainer = styled.div`
   align-items: center;
   flex-direction: row;
   text-align: left;
+  background-color: #9c342e;
+  color: white;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -19,6 +22,11 @@ const BenefitsContainer = styled.div`
 const TextContainer = styled.div`
   flex: 1;
   padding: 20px;
+  color: white;
+
+  h2 {
+    color: white;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -34,9 +42,9 @@ const Image = styled.img`
   border-radius: 8px;
 `;
 
-const Benefits = () => {
+const Benefits = ({ name, title, children }) => {
   return (
-    <BenefitsContainer>
+    <BenefitsContainer name={name}>
       <TextContainer>
         <h2>Gaming for a Good Cause</h2>
         <p>

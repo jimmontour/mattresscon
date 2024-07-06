@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import tokenImage from "../images/warhammer-table.png"; // Ensure you have a suitable image
+import { Element } from "react-scroll";
 
 const TokenSystemContainer = styled.div`
   padding: 50px 20px;
@@ -9,6 +10,7 @@ const TokenSystemContainer = styled.div`
   align-items: center;
   flex-direction: row;
   text-align: left;
+  background-color: #f3c039;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -44,9 +46,9 @@ const Highlight = styled.span`
   font-weight: bold;
 `;
 
-const TokenSystem = () => {
+const TokenSystem = ({ name, title, children }) => {
   return (
-    <TokenSystemContainer>
+    <TokenSystemContainer name={name}>
       <TextContainer>
         <h2>No Registration Needed!</h2>
         <TokenDetails>

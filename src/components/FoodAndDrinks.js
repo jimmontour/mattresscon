@@ -4,11 +4,14 @@ import pizzaImage from "../images/pizza.jpg"; // Ensure you have a pizza image
 import snacksImage from "../images/pizza.jpg"; // Ensure you have a snacks image
 import drinksImage from "../images/drinks.png"; // Ensure you have a drinks image
 import beerImage from "../images/beer.jpg"; // Ensure you have a beer image
+import { Element } from "react-scroll";
 
 const FoodAndDrinksContainer = styled.div`
   padding: 50px 20px;
   border-bottom: 1px solid #ccc;
   text-align: center;
+  background-color: lightgrey;
+  color: black;
 `;
 
 const ImageGrid = styled.div`
@@ -42,9 +45,9 @@ const Image = styled.img`
   height: auto;
 `;
 
-const FoodAndDrinks = () => {
+const FoodAndDrinks = ({ name, title, children }) => {
   return (
-    <FoodAndDrinksContainer>
+    <FoodAndDrinksContainer name={name}>
       <h2>Food & Drinks</h2>
       <p>
         Enjoy a variety of delicious food and beverages available at the event.

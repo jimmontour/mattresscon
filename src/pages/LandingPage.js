@@ -19,7 +19,9 @@ import necromunda from "../images/cards/necromunda.jpg";
 
 const LandingPageContainer = styled.div`
   text-align: center;
-  padding: 20px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 `;
 
 const GameCardContainer = styled.div`
@@ -27,6 +29,7 @@ const GameCardContainer = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   justify-items: center;
+  padding: 20px;
 
   @media (max-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);
@@ -94,7 +97,7 @@ const LandingPage = () => {
       <Header />
       <HeroSection />
 
-      <EventDescription />
+      <EventDescription name="about" title="About" />
 
       <Section name="games" title="Games">
         <p>
@@ -116,13 +119,13 @@ const LandingPage = () => {
         </GameCardContainer>
       </Section>
 
-      <TokenSystem />
+      <TokenSystem name="tokens" title="How To Play" />
 
-      <FoodAndDrinks />
+      <FoodAndDrinks name="food" title="Food & Drink" />
 
-      <Benefits />
+      <Benefits name="benefits" title="For A Good Cause" />
 
-      <Sponsors />
+      <Sponsors name="sponsors" title="Sponsors" />
 
       <Footer />
     </LandingPageContainer>

@@ -4,6 +4,7 @@ import raymourLogo from "../images/sponsors/Raymour.png"; // Ensure you have spo
 import harlequinLogo from "../images/sponsors/harlequin.jpg";
 import bellsLogo from "../images/sponsors/bells.png";
 import habitatLogo from "../images/sponsors/habitat.png"; // Add other sponsor logos as needed
+import { Element } from "react-scroll";
 
 const SponsorsContainer = styled.div`
   padding: 50px 20px;
@@ -62,9 +63,9 @@ const SponsorDescription = styled.p`
   margin-top: 5px;
 `;
 
-const Sponsors = () => {
+const Sponsors = ({ name, title, children }) => {
   return (
-    <SponsorsContainer>
+    <SponsorsContainer name={name}>
       <h2>Sponsors</h2>
       <SponsorGrid>
         <LogoContainer>

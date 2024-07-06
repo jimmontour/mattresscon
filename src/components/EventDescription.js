@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import eventImage from "../images/table.jpg"; // Ensure you have an event image
+import { Element } from "react-scroll";
 
 const EventDescriptionContainer = styled.div`
   display: flex;
@@ -8,6 +9,8 @@ const EventDescriptionContainer = styled.div`
   padding: 50px 20px;
   border-bottom: 1px solid #ccc;
   flex-direction: row;
+  background-color: black;
+  color: white;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -33,19 +36,41 @@ const Image = styled.img`
   border-radius: 8px;
 `;
 
-const EventDescription = () => {
+const Heading = styled.h2`
+  color: var(--accent-color); /* Red color */
+`;
+
+const Description = styled.p`
+  color: white;
+  margin-bottom: 15px;
+`;
+
+const EventDescription = ({ name, title, children }) => {
   return (
-    <EventDescriptionContainer>
+    <EventDescriptionContainer name={name}>
       <TextContainer>
-        <h2>About the Event</h2>
-        <p>
-          Join us for an exciting day of tabletop gaming inside the Raymour &
-          Flanigan store. This event is for a great cause, supporting Habitat
-          for Humanity. Admission is free, and tokens are available for $5 each,
-          with each game requiring one token. All proceeds go to Habitat for
-          Humanity Buffalo. Enjoy beer provided by Bell's, along with pizza,
-          drinks, and snacks.
-        </p>
+        <Heading>What is MattressCon?</Heading>
+        <Description>
+          <strong>MattressCon</strong> is an exciting day of tabletop gaming
+          held inside the Raymour & Flanigan store. Come anytime between{" "}
+          <strong>10AM and 6PM on Saturday, July 20th</strong> at the Raymour &
+          Flanigan Outlet, <strong>1650 Walden Ave, Cheektowaga</strong>.
+        </Description>
+        <Description>
+          <strong>Why:</strong> This event is organized to support{" "}
+          <strong>Habitat for Humanity Buffalo</strong> in their mission to
+          build homes and improve lives.
+        </Description>
+        <Description>
+          <strong>Admission:</strong> Free! You can participate in various games
+          by purchasing tokens for <strong>$5 each</strong>. Each game requires
+          one token, and all proceeds go directly to Habitat for Humanity
+          Buffalo.
+        </Description>
+        <Description>
+          <strong>Enjoy:</strong> Beer provided by Bell's, along with pizza,
+          drinks, and snacks. All proceeds benefit Habitat for Humanity Buffalo.
+        </Description>
       </TextContainer>
       <ImageContainer>
         <Image src={eventImage} alt="Event" />

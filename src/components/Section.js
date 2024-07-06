@@ -5,6 +5,11 @@ import { Element } from "react-scroll";
 const SectionContainer = styled(Element)`
   padding: 50px 20px;
   border-bottom: 1px solid #ccc;
+  background-color: #30567f;
+  color: white;
+  h2 {
+    color: white;
+  }
 `;
 
 const Section = ({ name, title, children }) => {

@@ -5,9 +5,10 @@ const Card = styled.div`
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
-  width: 300px;
+  width: 100%;
   margin: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: white;
 `;
 
 const CardImage = styled.img`
