@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { Link as ScrollLink } from "react-scroll";
 import logo from "../images/logo.png"; // Ensure you have a logo file
-import { Element } from "react-scroll";
 
 const HeaderContainer = styled.header`
   background-color: black;
@@ -38,6 +37,11 @@ const EventDetails = styled.div`
 const Nav = styled.nav`
   display: flex;
   gap: 20px;
+  align-items: center;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
 `;
 
 const NavLink = styled(ScrollLink)`
@@ -46,6 +50,20 @@ const NavLink = styled(ScrollLink)`
   cursor: pointer;
   &:hover {
     color: var(--link-hover-color);
+  }
+`;
+
+const FacebookButton = styled.a`
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  &:hover {
+    background-color: var(--link-hover-color);
   }
 `;
 
@@ -76,6 +94,13 @@ const Header = () => {
         <NavLink to="sponsors" smooth duration={500}>
           Sponsors
         </NavLink>
+        <FacebookButton
+          href="https://www.facebook.com/events/468624162224859"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Facebook Event Page
+        </FacebookButton>
       </Nav>
     </HeaderContainer>
   );
