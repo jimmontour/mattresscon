@@ -75,7 +75,7 @@ const LargeText = styled.h1`
   font-weight: bold;
 
   @media (min-width: 768px) {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   @media (min-width: 1024px) {
