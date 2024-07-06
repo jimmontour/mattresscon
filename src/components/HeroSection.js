@@ -14,14 +14,6 @@ const backgrounds = [
   heroBackground4,
 ];
 
-const fadeAnimation = keyframes`
-  0% { opacity: 0; }
-  10% { opacity: 1; }
-  25% { opacity: 1; }
-  35% { opacity: 0; }
-  100% { opacity: 0; }
-`;
-
 const HeroSectionContainer = styled.section`
   position: relative;
   padding: 100px 20px;
@@ -101,24 +93,6 @@ const EventDetails = styled.div`
   font-size: 1rem;
   margin-bottom: 15px; /* Reduced margin to tighten spacing */
   color: white;
-`;
-
-const HeroButtons = styled.div`
-  display: flex;
-  gap: 10px;
-`;
-
-const HeroButton = styled(ScrollLink)`
-  background-color: var(--accent-color);
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  &:hover {
-    background-color: var(--link-hover-color);
-  }
 `;
 
 const HeroSection = () => {

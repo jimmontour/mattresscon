@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import pizzaImage from "../images/pizza.jpg"; // Ensure you have a pizza image
-import snacksImage from "../images/pizza.jpg"; // Ensure you have a snacks image
 import drinksImage from "../images/drinks.png"; // Ensure you have a drinks image
 import beerImage from "../images/beer.jpg"; // Ensure you have a beer image
 import { Element } from "react-scroll";
