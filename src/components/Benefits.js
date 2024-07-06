@@ -10,7 +10,7 @@ const BenefitsContainer = styled.div`
   align-items: center;
   flex-direction: row;
   text-align: left;
-  background-color: #9c342e;
+  background-color: #9c343e;
   color: white;
 
   @media (max-width: 768px) {
