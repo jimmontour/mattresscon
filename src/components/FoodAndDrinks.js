@@ -45,7 +45,7 @@ const Image = styled.img`
   height: auto;
 `;
 
-const FoodAndDrinks = ({ name, title, children }) => {
+const FoodAndDrinks = ({ name }) => {
   return (
     <FoodAndDrinksContainer name={name}>
       <h2>Food & Drinks</h2>

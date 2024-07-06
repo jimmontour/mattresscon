@@ -45,7 +45,7 @@ const Description = styled.p`
   margin-bottom: 15px;
 `;
 
-const EventDescription = ({ name, title, children }) => {
+const EventDescription = ({ name }) => {
   return (
     <EventDescriptionContainer name={name}>
       <TextContainer>

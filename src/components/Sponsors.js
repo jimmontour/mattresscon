@@ -63,7 +63,7 @@ const SponsorDescription = styled.p`
   margin-top: 5px;
 `;
 
-const Sponsors = ({ name, title, children }) => {
+const Sponsors = ({ name }) => {
   return (
     <SponsorsContainer name={name}>
       <h2>Sponsors</h2>

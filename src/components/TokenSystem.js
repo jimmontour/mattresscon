@@ -46,7 +46,7 @@ const Highlight = styled.span`
   font-weight: bold;
 `;
 
-const TokenSystem = ({ name, title, children }) => {
+const TokenSystem = ({ name }) => {
   return (
     <TokenSystemContainer name={name}>
       <TextContainer>

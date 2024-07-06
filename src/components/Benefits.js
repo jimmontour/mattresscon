@@ -42,7 +42,7 @@ const Image = styled.img`
   border-radius: 8px;
 `;
 
-const Benefits = ({ name, title, children }) => {
+const Benefits = ({ name }) => {
   return (
     <BenefitsContainer name={name}>
       <TextContainer>
