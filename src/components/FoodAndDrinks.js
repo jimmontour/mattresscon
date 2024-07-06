@@ -48,6 +48,7 @@ const Image = styled.img`
 const FoodAndDrinks = ({ name }) => {
   return (
     <FoodAndDrinksContainer name={name}>
+      <Element />
       <h2>Food & Drinks</h2>
       <p>
         Enjoy a variety of delicious food and beverages available at the event.

@@ -45,6 +45,7 @@ const Image = styled.img`
 const Benefits = ({ name }) => {
   return (
     <BenefitsContainer name={name}>
+      <Element />
       <TextContainer>
         <h2>Gaming for a Good Cause</h2>
         <p>

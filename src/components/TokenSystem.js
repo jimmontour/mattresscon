@@ -49,6 +49,7 @@ const Highlight = styled.span`
 const TokenSystem = ({ name }) => {
   return (
     <TokenSystemContainer name={name}>
+      <Element />
       <TextContainer>
         <h2>No Registration Needed!</h2>
         <TokenDetails>

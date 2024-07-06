@@ -66,6 +66,7 @@ const SponsorDescription = styled.p`
 const Sponsors = ({ name }) => {
   return (
     <SponsorsContainer name={name}>
+      <Element />
       <h2>Sponsors</h2>
       <SponsorGrid>
         <LogoContainer>

@@ -10,6 +10,7 @@ const SectionContainer = styled(Element)`
 const Section = ({ name, title, children }) => {
   return (
     <SectionContainer name={name}>
+      <Element />
       <h2>{title}</h2>
       {children}
     </SectionContainer>

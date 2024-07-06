@@ -48,6 +48,7 @@ const Description = styled.p`
 const EventDescription = ({ name }) => {
   return (
     <EventDescriptionContainer name={name}>
+      <Element />
       <TextContainer>
         <Heading>What is MattressCon?</Heading>
         <Description>
